@@ -9,14 +9,7 @@ import UIKit
 
 class FeedCell: UITableViewCell {
     
-    @IBOutlet weak var profileImg: UIImageView!
-    @IBOutlet weak var profileNameLbl: UILabel!
-    @IBOutlet weak var dateLbl: UILabel!
-    @IBOutlet weak var captionLbl: UILabel!
-    @IBOutlet weak var postImg: UIImageView!
-    @IBOutlet weak var likesLbl: UILabel!
-    @IBOutlet weak var commentLbl: UILabel!
-
+    @IBOutlet weak var postView: PostView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,11 +22,7 @@ class FeedCell: UITableViewCell {
     }
     
     func configureCell(data: Feed?) {
-        profileImg.image = UIImage(named: data?.profilePhoto ?? "defaultProfilePhoto")
-        postImg.image = UIImage(named: data?.postPhoto ?? "defaultProfilePhoto")
-        profileNameLbl.text = data?.name
-        captionLbl.text = data?.caption
-        dateLbl.text = data?.date
+        postView.setView(feed: data)
     }
     
 }
