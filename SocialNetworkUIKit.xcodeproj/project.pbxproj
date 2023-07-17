@@ -23,6 +23,9 @@
 		3715D1202A5BF29A00E1B7FC /* feedData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3715D11F2A5BF29A00E1B7FC /* feedData.json */; };
 		3715D1222A5D456B00E1B7FC /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D1212A5D456B00E1B7FC /* PostDetailViewController.swift */; };
 		3715D1242A5D693000E1B7FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D1232A5D693000E1B7FC /* LoginViewController.swift */; };
+		3715D1292A612E7F00E1B7FC /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D1282A612E7F00E1B7FC /* PostView.swift */; };
+		3715D12D2A614FEA00E1B7FC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3715D12C2A614FEA00E1B7FC /* Extension.swift */; };
+		3715D12F2A61849F00E1B7FC /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3715D12E2A61849F00E1B7FC /* PostView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		3715D11F2A5BF29A00E1B7FC /* feedData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = feedData.json; sourceTree = "<group>"; };
 		3715D1212A5D456B00E1B7FC /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		3715D1232A5D693000E1B7FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3715D1282A612E7F00E1B7FC /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		3715D12C2A614FEA00E1B7FC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3715D12E2A61849F00E1B7FC /* PostView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 				3715D0F82A5B9F5500E1B7FC /* SceneDelegate.swift */,
 				3715D1072A5B9F5800E1B7FC /* Info.plist */,
 				3715D0FF2A5B9F5500E1B7FC /* SocialNetworkUIKit.xcdatamodeld */,
+				3715D12C2A614FEA00E1B7FC /* Extension.swift */,
 			);
 			path = SocialNetworkUIKit;
 			sourceTree = "<group>";
@@ -91,6 +98,7 @@
 		3715D10D2A5B9F7000E1B7FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3715D1252A612DD500E1B7FC /* View */,
 				3715D1132A5BEA0700E1B7FC /* Cell */,
 				3715D1122A5BE9F700E1B7FC /* Storyboard */,
 			);
@@ -143,6 +151,15 @@
 				3715D11F2A5BF29A00E1B7FC /* feedData.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		3715D1252A612DD500E1B7FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3715D1282A612E7F00E1B7FC /* PostView.swift */,
+				3715D12E2A61849F00E1B7FC /* PostView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +223,7 @@
 				3715D1062A5B9F5800E1B7FC /* LaunchScreen.storyboard in Resources */,
 				3715D1032A5B9F5800E1B7FC /* Assets.xcassets in Resources */,
 				3715D1112A5BA1F000E1B7FC /* Feed.storyboard in Resources */,
+				3715D12F2A61849F00E1B7FC /* PostView.xib in Resources */,
 				3715D0FE2A5B9F5500E1B7FC /* Main.storyboard in Resources */,
 				3715D1182A5BEA7A00E1B7FC /* FeedCell.xib in Resources */,
 				3715D1202A5BF29A00E1B7FC /* feedData.json in Resources */,
@@ -222,6 +240,7 @@
 				3715D0FB2A5B9F5500E1B7FC /* ViewController.swift in Sources */,
 				3715D0F72A5B9F5500E1B7FC /* AppDelegate.swift in Sources */,
 				3715D10F2A5B9FA300E1B7FC /* FeedViewController.swift in Sources */,
+				3715D12D2A614FEA00E1B7FC /* Extension.swift in Sources */,
 				3715D11C2A5BEAF100E1B7FC /* Feed.swift in Sources */,
 				3715D1222A5D456B00E1B7FC /* PostDetailViewController.swift in Sources */,
 				3715D1012A5B9F5500E1B7FC /* SocialNetworkUIKit.xcdatamodeld in Sources */,
@@ -229,6 +248,7 @@
 				3715D0F92A5B9F5500E1B7FC /* SceneDelegate.swift in Sources */,
 				3715D1242A5D693000E1B7FC /* LoginViewController.swift in Sources */,
 				3715D1172A5BEA7A00E1B7FC /* FeedCell.swift in Sources */,
+				3715D1292A612E7F00E1B7FC /* PostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
